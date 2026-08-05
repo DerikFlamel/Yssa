@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="don't waste any moment, let's make it be special">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;700&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="rabbit_love.png">
+
+    <title> Date Agenda </title>
+</head>
+<body>
+    <div id="hearts"></div> <!-- Floating Hearts -->
+    <div id="sparkles"></div> <!-- Sparkles -->
+    <div class="background"></div> 
+
+    <!-- HOME -->
+    <section class="page active" id="homePage">
+        <div class="window">
+            <div class="pixel-title"> 💖 PARA: CLARA 💖 </div>
+            <h1> Hey Gatinha 😼 </h1>
+            <h2> Uma pergunta muito importante... </h2>
+            <p class="intro"> 
+                Você quer sair comigo? 💕
+                <br><br>
+                Eu prometo...
+                <br>
+                ✨ Comidinhas
+                <br>
+                ✨ Risadas
+                <br>
+                ✨ Tratamento de Princesa™
+                <br>
+                ✨ Carinho Ilimitado
+            </p>
+
+            <div id="funnyText"> Escolha com cuidado... </div>
+
+            <div class="buttons">
+                <button id="yesBtn" class="yes"> 💖 SIM!! 💖 </button>
+                <button id="noBtn" class="no"> não... </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- MOOD -->
+    <section class="page" id="moodPage">
+        <div class="window">
+            <h1> 🩷 Como você está agora? </h1>
+            <p>
+                Escolha um sentimento ✨
+            </p>
+            <div class="mood-grid">
+                <button class="mood" data-mood="Bem">
+                    😊
+                    <span> Bem </span>
+                </button>
+                <button class="mood" data-mood="Estressada">
+                    😩
+                    <span> Estressada </span>
+                </button>
+                <button class="mood" data-mood="Sensível">
+                    🥺
+                    <span> Sensível </span>
+                </button>
+                <button class="mood" data-mood="Feliz">
+                    🤩
+                    <span> Feliz </span>
+                </button>
+                <button class="mood" data-mood="Com Sono">
+                    😴
+                    <span> Com Sono </span>
+                </button>
+                <button class="mood" data-mood="hmm">
+                    😈
+                    <span> hmm </span>
+                </button>
+            </div>
+            <button class="next" id="toActivities"> Continuar 💕 </button>
+        </div>
+    </section>
+
+    <!-- ACTIVITIES -->
+    <section class="page" id="activityPage">
+        <div class="window">
+            <h1> 🎀 Hoje é dia de? </h1>
+            <p> Escolha tudo que você estiver com vontade 💕 </p>
+            <div class="checkbox-grid">
+                <label><input type="checkbox" value="Caminhada"> 🌸 Caminhada </label>
+                <label><input type="checkbox" value="Shopping"> 🛍 Shopping </label>
+                <label><input type="checkbox" value="Netflix"> 📺 Netflix </label>
+                <label><input type="checkbox" value="Cinema"> 🎬 Cinema </label>
+                <label><input type="checkbox" value="Noite de Jogos"> 🕹 Noite de Jogos </label>
+                <label><input type="checkbox" value="Cafeteria"> ☕ Cafeteria </label>
+                <label><input type="checkbox" value="Restaurante"> 🍝 Restaurante </label>
+                <label><input type="checkbox" value="Cozinhar Juntos"> 🫕 Cozinhar Juntos </label>
+                <label><input type="checkbox" value="Passeio de Carro"> 🚗 Passeio de Carro </label>
+                <label><input type="checkbox" value="Piquenique "> 🧺 Piquenique </label>
+                <label><input type="checkbox" value="Carinho"> 🧸 Carinho </label>
+                <label><input type="checkbox" value="Surpresa"> 🧧 Surpresa </label>
+            </div>
+            <button class="next" id="toFood"> Continuar 💕 </button>
+        </div>
+    </section>
+
+    <!-- FOOD -->
+    <section class="page" id="foodPage">
+        <div class="window">
+            <h1> 🍣 Vai ter comida? </h1>
+            <div class="food-grid">
+                <button class="food"> 🍣 Sushi </button>
+                <button class="food"> 🍜 Lámen  </button>
+                <button class="food"> 🍕 Pizza </button>
+                <button class="food"> 🍔 Lanche  </button>
+                <button class="food"> 🍝 Massa </button>
+                <button class="food"> 🍗 Churrasco </button>
+                <button class="food"> 🥙 Poke </button>
+                <button class="food"> 🍩 Docinhos </button>
+                <button class="food"> 🧋 Café </button>
+                <button class="food"> 🍦 Sorvete </button>
+            </div>
+            <input id="otherFood" type="text" placeholder="Ficou faltando alguma coisa?">
+            <button class="next" id="toPrincess"> Continuar 💕 </button>
+        </div>
+    </section>
+
+    <!-- PRINCESS -->
+    <section class="page" id="princessPage">
+        <div class="window">
+            <h1> 👑 Tratamento de Princesa </h1>
+            <p> Me diga tudo que você está precisando 💖 </p>
+            <div class="checkbox-grid">
+                <label><input type="checkbox" value="Massagem"> 💆 Massagem </label>
+                <label><input type="checkbox" value=Flores"> 💐 Flores </label>
+                <label><input type="checkbox" value="Doces"> 🍬 Doces </label>
+                <label><input type="checkbox" value="Shopping"> 🛍 Shopping </label>
+                <label><input type="checkbox" value="Ursihho da Máquina "> 🧸 Ursihho da Máquina </label>
+                <label><input type="checkbox" value="Ficar de Mãos Dadas"> 🤝 Ficar de Mãos Dadas </label>
+                <label><input type="checkbox" value="Abraços ">🫂 Abraços </label>
+                <label><input type="checkbox" value="Beijos"> 💋 Beijos </label>
+                <label><input type="checkbox" value="Tirar Fotos"> 📸 Tirar Fotos </label>
+                <label><input type="checkbox" value="Muitos Elogios"> 🥹 Muitos Elogios </label>
+            </div>
+            <textarea id="notes" placeholder="Faça pedidos específicos se precisar."></textarea>
+            <button class="next" id="toSummary"> Continuar 💕 </button>
+        </div>
+    </section>
+>
+    <!-- SUMMARY -->
+
+    <section class="page" id="summaryPage">
+        <div class="window">
+            <h1> 🎉 Pedido Aceito! </h1>
+            <div id="summary"></div>
+            <div class="schedule">
+                <input type="date" id="date">
+                <input type="time" id="time">
+                <input
+                    id="location"
+                    type="text"
+                    placeholder="Local">
+            </div>
+            <div class="summaryButtons">
+                <button id="calendarBtn"> 📅 Salvar no Calendário </button>
+                <button id="sendBtn" type="button"> 💌 Enviar Pedido de Encontro </button>
+            </div>
+        </div>
+    </section>
+    <canvas id="confetti"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>

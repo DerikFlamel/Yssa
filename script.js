@@ -28,15 +28,15 @@ let noClicks = 0;
 
 const funnyMessages = [
     "Tem certeza? 🥺",
-    "Alerta de resposta errada! ⚠️",
     "Eu até treinei para te chamar para sair 😭",
+    "A Morango acharia isso errado ❤️‍🩹",
     "O botão de não deve estar com vergonha..",
-    "My Melody acharia isso errado 💖",
+    "Alerta de resposta errada! ⚠️",
     "Você clicou no botão errado?",
     "Vou comprar seus docinhos favoritos 🥹",
+    "Você vai poder escolher o que quiser!",
     "Vou carregar suas sacolas e sua bolsa 🛍",
-    "Você vai poder escolher o que quiser.",
-    "Missão fracassada com sucesso.",
+    "Missão fracassada com sucesso! ",
 ];
 
 function showPage(page) {
